@@ -1,0 +1,25 @@
+@import '../../scss/vars';
+
+.inner {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: $blue;
+}
+
+.icon svg path {
+    fill: #fff;
+}
+
+.price {
+    margin-left: 1.1rem;
+}

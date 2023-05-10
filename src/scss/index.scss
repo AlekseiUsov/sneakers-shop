@@ -1,0 +1,28 @@
+@import 'normalize';
+@import 'vars';
+
+body {
+    font-family: 'Roboto', 'Arial', 'Helvetica', 'Tahoma', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}

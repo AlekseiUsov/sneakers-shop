@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "id": "1",
+            "title": "New Balance 574 Vintage Brights",
+            "price": 650,
+            "number": "MT91547",
+            "image": "https://i.yapx.ru/V9jPj.png",
+            "largeImage": "https://i.yapx.ru/WAuFy.png"
+        },
+        {
+            "id": "2",
+            "title": "New Balance Made in UK 920 Chinese New Year",
+            "price": 1200,
+            "number": "MT91548",
+            "image": "https://i.yapx.cc/V9jML.png",
+            "largeImage": "https://i.yapx.ru/WAuHO.png"
+        },
+        {
+            "id": "3",
+            "title": "New Balance 373 Modern Classics",
+            "price": 800,
+            "number": "MT91549",
+            "image": "https://i.yapx.ru/V9jNa.png",
+            "largeImage": "https://i.yapx.ru/WAuH3.png"
+        },
+        {
+            "id": "4",
+            "title": "New Balance Made in UK 670 Chinese New Year",
+            "price": 780,
+            "number": "MT91550",
+            "image": "https://i.yapx.ru/V9jN8.png",
+            "largeImage": "https://i.yapx.ru/WAuJR.png"
+        },
+        {
+            "id": "5",
+            "title": "New Balance X-Racer Utility",
+            "price": 1000,
+            "number": "MT91551",
+            "image": "https://i.yapx.ru/V9jOG.png",
+            "largeImage": "https://i.yapx.ru/WAuKF.png"
+        },
+        {
+            "id": "6",
+            "title": "New Balance 5740 Think Colorfully",
+            "price": 940,
+            "number": "MT91552",
+            "image": "https://i.yapx.ru/V9jOL.png",
+            "largeImage": "https://i.yapx.ru/WAuKy.png"
+        }
+    ]
+}

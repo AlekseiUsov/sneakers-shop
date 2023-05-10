@@ -1,0 +1,97 @@
+//? === Loader ===
+
+@import '../../scss/vars';
+
+.wrapper {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    --size: 5vmin;
+
+    display: block;
+    position: relative;
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    font-size: calc(var(--size) * 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+}
+
+.loader::before,
+.loader::after {
+    width: var(--size);
+    height: var(--size);
+    // background-color: var(--color);
+    background-color: $lightgrey-color;
+}
+
+.loader::before {
+    content: 'P';
+    top: calc(50% - var(--size));
+    left: calc(50% - var(--size));
+    animation: animation1 2.7s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+}
+
+.loader::after {
+    content: 'S';
+    top: 50%;
+    left: 50%;
+    animation: animation2 2.7s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+}
+
+@keyframes animation1 {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    25% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    75% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animation2 {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%) translateY(-100%);
+    }
+
+    75% {
+        transform: translateY(-100%);
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../scss/vars';
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 110px;
+    margin: 0 auto;
+
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    border-radius: 3px;
+    width: 156px;
+    height: 40px;
+
+    color: #fff;
+    background-color: $blue;
+}
+
+.image {
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.number {
+    margin-bottom: 20px;
+}

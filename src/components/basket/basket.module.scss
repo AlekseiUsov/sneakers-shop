@@ -1,0 +1,9 @@
+@import '../../scss/vars';
+
+
+.wrapper {
+    max-width: 410px;
+    width: 100%;
+    border-left: 1px solid $lightgrey-color;
+    margin-top: -4rem;
+}

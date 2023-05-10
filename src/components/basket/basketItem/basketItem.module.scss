@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+}
+
+.image img {
+    display: block;
+    width: 90px;
+    height: 50px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.name {
+    width: 200px;
+}
+
+.counter {
+    display: flex;
+}

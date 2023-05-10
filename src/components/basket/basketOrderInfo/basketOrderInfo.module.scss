@@ -1,0 +1,14 @@
+@import '../../../scss/vars';
+
+
+.wrapper {
+    padding: 40px 40px;
+    height: 50%;
+    border-top: 1px solid $lightgrey-color;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
