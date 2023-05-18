@@ -9,7 +9,6 @@ export const ShopBasket = () => {
 
     return (
         <div className={styles.wrapper}>
-            <h2>My basket</h2>
             <BasketItemslist />
             <BasketOrderInfo />
         </div>

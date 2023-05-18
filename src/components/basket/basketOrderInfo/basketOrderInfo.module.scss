@@ -2,13 +2,13 @@
 
 
 .wrapper {
-    padding: 40px 40px;
-    height: 50%;
+    height: 47.5%;
     border-top: 1px solid $lightgrey-color;
+    padding: 40px;
 }
 
 .inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    line-height: 34px;
 }

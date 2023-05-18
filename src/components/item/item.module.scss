@@ -1,15 +1,17 @@
 @import '../../scss/vars';
 
 .wrapper {
+    padding: 27px 19px 15px 12px;
     max-width: 249px;
     border: 1px solid $lightgrey-color;
 }
 
-.image {
+.image img {
+    margin-bottom: 43px;
     cursor: pointer;
 }
 
 .title {
     width: 180px;
-    margin-bottom: 5px;
+    margin-bottom: 11px;
 }
