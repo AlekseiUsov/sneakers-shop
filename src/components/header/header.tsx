@@ -17,7 +17,7 @@ export const Header = () => {
     const counterItems = countItems(items);
 
     return (
-        <div className={styles.wrapper}>
+        <header className={styles.wrapper}>
             <NavLink to='/' className={styles.logo}>
                 {logoIcon}
             </NavLink>
@@ -31,6 +31,6 @@ export const Header = () => {
                 {cartIcon}
             </div>
 
-        </div>
+        </header>
     )
 }
