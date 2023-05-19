@@ -1,23 +1,37 @@
 .wrapper {
     display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+
+    margin-bottom: 5rem;
+}
+
+.image {
+    display: flex;
+    align-items: end;
+    width: 100px;
+    height: 75px;
 }
 
 .image img {
-    display: block;
     width: 90px;
     height: 50px;
 }
 
-.inner {
+.block {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    margin-left: 1.4rem;
+}
+
+.name {
+    margin-bottom: 1rem;
 }
 
 .counter {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .name {

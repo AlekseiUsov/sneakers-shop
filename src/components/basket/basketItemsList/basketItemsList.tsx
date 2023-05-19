@@ -1,3 +1,5 @@
+import React from "react";
+
 //RTK
 import { useAppSelector } from "../../../store";
 
@@ -13,19 +15,22 @@ export const BasketItemslist = () => {
 
     return (
         <div className={styles.wrapper}>
-            {!items.length
-                ? <h3>* Здесь будут ваши заказы *</h3>
-                : <>
-                    {items
-                        .map((item) => (
-                            <BasketItem
-                                key={item.id}
-                                {...item}
-                            />
-                        ))
-                    }
-                </>
-            }
+            <h2 className={styles.title}>My basket</h2>
+            <div className={styles.list}>
+                {!items.length
+                    ? null
+                    : <>
+                        {items
+                            .map((item) => (
+                                <BasketItem
+                                    key={item.id}
+                                    {...item}
+                                />
+                            ))
+                        }
+                    </>
+                }
+            </div>
         </div>
     )
 }

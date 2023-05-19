@@ -47,8 +47,8 @@ export const BasketItem: FC<TItem> = (item) => {
                         onClick={() => dispatch(incrementCounter(item))}
                         className={styles.plus}
                     >{plusIcon}</div>
+                    <p>$ {formatedPrice}</p>
                 </div>
-                <p>$ {formatedPrice}</p>
             </div>
             <div onClick={() => dispatch(removeItem(item))}>{closeIcon}</div>
         </div>

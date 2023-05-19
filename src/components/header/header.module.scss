@@ -3,8 +3,7 @@
 .wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 26px 30px 14px 30px;
-    margin-bottom: 4.3rem;
+    padding: 26px 28px 14px 30px;
     border-bottom: 1px solid $lightgrey-color;
 }
 
@@ -37,6 +36,6 @@
 }
 
 
-@media (min-width: 767px) {
-    .wrapper {}
-}
+// @media (min-width: 767px) {
+//     .wrapper {}
+// }
