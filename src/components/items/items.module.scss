@@ -11,3 +11,9 @@
     margin-left: 1.1rem;
     margin-top: 4.3rem;
 }
+
+@media (max-width: 1200px) {
+    .wrapper {
+        grid-template-columns: 18rem 18rem;
+    }
+}
