@@ -14,7 +14,6 @@ export const BasketOrderInfo = () => {
     const total = tax + subtotal + shipping;
     const formatedTotal = total >= 1000 ? formatePrice(total) : total;
 
-
     return (
         <div className={styles.wrapper}>
             <div className={styles.inner}>
@@ -22,7 +21,7 @@ export const BasketOrderInfo = () => {
                 <p className={styles.price}>
                     {subtotal === 0
                         ? '-'
-                        : <>${formatedSubTotal}</>
+                        : <>$ {formatedSubTotal}</>
                     }
                 </p>
             </div>
@@ -31,7 +30,7 @@ export const BasketOrderInfo = () => {
                 <p className={styles.price}>
                     {subtotal === 0
                         ? '-'
-                        : <>${tax}</>
+                        : <>$ {tax}</>
                     }</p>
             </div>
             <div className={styles.inner}>
@@ -39,16 +38,16 @@ export const BasketOrderInfo = () => {
                 <p className={styles.price}>
                     {subtotal === 0
                         ? '-'
-                        : <>${shipping}</>
+                        : <>$ {shipping}</>
                     }
                 </p>
             </div>
             <div className={styles.inner}>
-                <h2 className={styles.text}>Total</h2>
-                <h2 className={styles.price}>
+                <h2 className={`${styles.text} ${styles.total}`}>Total</h2>
+                <h2 className={`${styles.price} ${styles.total}`}>
                     {subtotal === 0
                         ? '-'
-                        : <>${formatedTotal}</>
+                        : <>$ {formatedTotal}</>
                     }</h2>
             </div>
         </div>

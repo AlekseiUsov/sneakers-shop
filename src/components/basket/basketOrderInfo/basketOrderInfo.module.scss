@@ -1,14 +1,25 @@
 @import '../../../scss/vars';
 
-
 .wrapper {
-    height: 47.5%;
+    display: block;
+    height: 50%;
     border-top: 1px solid $lightgrey-color;
-    padding: 40px;
+    padding: 40px 55px 0px 40px;
 }
 
 .inner {
     display: flex;
     justify-content: space-between;
     line-height: 34px;
+}
+
+.total {
+    line-height: 34px;
+}
+
+
+@media (max-width: 1200px) {
+    .wrapper {
+        height: 63.5%;
+    }
 }

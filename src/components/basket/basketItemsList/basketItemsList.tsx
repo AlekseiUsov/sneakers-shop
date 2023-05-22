@@ -1,5 +1,3 @@
-import React from "react";
-
 //RTK
 import { useAppSelector } from "../../../store";
 
@@ -8,7 +6,6 @@ import { BasketItem } from "../basketItem/basketItem";
 
 //Styles
 import styles from './basketItemsList.module.scss'
-
 
 export const BasketItemslist = () => {
     const { items } = useAppSelector(state => state.basket);
