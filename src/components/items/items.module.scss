@@ -3,16 +3,34 @@
     width: 100%;
 
     display: grid;
-    grid-template-columns: 18rem 18rem 18rem;
-    grid-column-gap: 5rem;
-    grid-row-gap: 3.5rem;
+    grid-template-columns: repeat(3, minmax(228px, 249px));
+    gap: 10%;
     justify-content: center;
 
     margin-left: 1.1rem;
     margin-top: 4.3rem;
 }
 
+@media (max-width: 1400px) {
+    .wrapper {
+        grid-column-gap: 5%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        grid-column-gap: 2.5%;
+    }
+}
+
 @media (max-width: 1200px) {
+    .wrapper {
+        grid-template-columns: 18rem 18rem;
+    }
+}
+
+
+@media (max-width: 550px) {
     .wrapper {
         grid-template-columns: 18rem 18rem;
     }
