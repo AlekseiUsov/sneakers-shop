@@ -3,12 +3,14 @@
     justify-content: space-around;
     align-items: stretch;
 
-    margin-bottom: 5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 4.5rem;
 }
 
 .image {
     display: flex;
     align-items: end;
+    justify-content: end;
     width: 100px;
     height: 75px;
 }
@@ -21,23 +23,47 @@
 .block {
     display: flex;
     flex-direction: column;
-    margin-left: 1.4rem;
+    margin-left: 1rem;
 }
 
 .name {
-    margin-bottom: 1rem;
+    max-width: 200px;
+    margin-bottom: 1.2rem;
 }
 
 .counter {
+    max-width: 200px;
+
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-}
-
-.name {
-    width: 200px;
+    gap: 1.3rem;
 }
 
 .counter {
     display: flex;
+}
+
+@media (max-width: 850px) {
+    .block {
+        margin-left: 0;
+    }
+
+    .counter {
+        gap: 0.5rem;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        justify-content: flex-start;
+    }
+
+    .image {
+        justify-content: flex-start;
+    }
+
+    .counter {
+        gap: 1.5rem;
+    }
 }

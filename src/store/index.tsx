@@ -6,12 +6,14 @@ import { useDispatch, TypedUseSelectorHook, useSelector as selectorHook } from '
 import { itemsSlice } from "./slices/items-slice";
 import { basketSlice } from "./slices/basket-slice";
 import { currentItemSlice } from "./slices/current-item-slice";
+import { cartStatusSlice } from "./slices/cart-slice";
 
 export const store = configureStore({
     reducer: {
         items: itemsSlice.reducer,
         basket: basketSlice.reducer,
         currentItem: currentItemSlice.reducer,
+        cartStatus: cartStatusSlice.reducer,
     },
 })
 

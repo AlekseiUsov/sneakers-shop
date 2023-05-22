@@ -55,3 +55,7 @@ export type TBasket = {
     tax: number,
     shipping: number,
 }
+
+export type TCartStatus = {
+    status: boolean,
+}
