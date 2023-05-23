@@ -1,6 +1,7 @@
 {
   "name": "sneakers-shop",
   "version": "0.1.0",
+  "homepage": " https://alekseiusov.github.io/sneakers-shop/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -24,7 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server -w server/db.json -p 3001"
+    "server": "json-server -w server/db.json -p 3001",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
   "devDependencies": {
     "@types/uniqid": "^5.3.2",
     "concurrently": "^8.0.1",
+    "gh-pages": "^5.0.0",
     "json-server": "^0.17.3"
   }
 }
