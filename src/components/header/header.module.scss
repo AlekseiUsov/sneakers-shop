@@ -35,3 +35,9 @@
     padding-top: 1px;
     color: #fff;
 }
+
+@media (max-width: 411px) {
+    .wrapper {
+        padding: 26px 28px 14px 20px;
+    }
+}
