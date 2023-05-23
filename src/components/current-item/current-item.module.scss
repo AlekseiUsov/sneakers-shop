@@ -10,7 +10,6 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0 110px 0 110px;
     margin: 0 auto;
 
     max-width: 1200px;
@@ -42,4 +41,38 @@
 
 .number {
     margin-bottom: 20px;
+}
+
+
+@media (max-width: 1300px) {
+    .image img {
+        display: block;
+        max-width: 570px;
+        height: 325px;
+    }
+}
+
+@media (max-width: 960px) {
+    .image img {
+        max-width: 500px;
+        height: 255px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .image img {
+        max-width: 330px;
+        height: 190px;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 410px) {
+    .image img {
+        max-width: 260px;
+        height: 120px;
+        margin: 0;
+    }
 }

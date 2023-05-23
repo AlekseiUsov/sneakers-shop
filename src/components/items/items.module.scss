@@ -48,6 +48,13 @@
     }
 }
 
+@media (max-width: 835px) {
+    .wrapper {
+        gap: 0%;
+        padding: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .wrapper {
         grid-column-gap: 8.5%;
