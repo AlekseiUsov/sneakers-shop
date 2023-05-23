@@ -18,7 +18,10 @@ import { Loader } from "../../ui-kit/loader/loader";
 export const ItemPage = () => {
 
     const { id } = useParams();
+
     const { isLoading, currentItem, error } = useAppSelector(state => state.currentItem);
+    const { status } = useAppSelector(state => state.cartStatus);
+
     const dispatch = useAppDispatch();
 
     useEffect(() => {
@@ -32,7 +35,7 @@ export const ItemPage = () => {
             {isLoading && !currentItem && <Loader />}
             {error && <h1>Извините, произошла ошибка...</h1>}
             {currentItem &&
-                < div className={styles.wrapper} >
+                <div className={styles.wrapper}>
                     <CurrentItem item={currentItem} />
                     <ShopBasket />
                 </div >

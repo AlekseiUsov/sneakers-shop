@@ -21,18 +21,20 @@ export const CurrentItem: FC<TCurrentItem> = (item) => {
     const dispath = useAppDispatch();
 
     return (
-        <div className={styles.wrapper} >
-            <Link
-                to='/'
-                className={styles.button}
-                onClick={() => dispath(removeCurrentItem(item))}
-            >Back in catalog</Link>
-            <div className={styles.image}>
-                <img src={largeImage} alt={`фото кроссовок ${title}`} />
+        <div className={styles.container}>
+            <div className={styles.wrapper} >
+                <Link
+                    to='/'
+                    className={styles.button}
+                    onClick={() => dispath(removeCurrentItem(item))}
+                >Back in catalog</Link>
+                <div className={styles.image}>
+                    <img src={largeImage} alt={`фото кроссовок ${title}`} />
+                </div>
+                <h1 className={styles.title}>{title}</h1>
+                <p className={styles.number}>{`Item model number: ${number}`}</p>
+                <ItemPrice item={item.item} />
             </div>
-            <h1 className={styles.title}>{title}</h1>
-            <p className={styles.number}>{`Item model number: ${number}`}</p>
-            <ItemPrice item={item.item} />
         </div>
     )
 }

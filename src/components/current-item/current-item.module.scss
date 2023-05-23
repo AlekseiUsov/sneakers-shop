@@ -1,10 +1,18 @@
 @import '../../scss/vars';
 
 
+.container {
+    display: block;
+    box-sizing: border-box;
+    margin: 30px auto 0;
+
+    min-height: 710px;
+    height: 100%;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0 110px;
     margin: 0 auto;
 
     max-width: 1200px;
@@ -27,7 +35,7 @@
 }
 
 .image {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .title {
@@ -36,4 +44,36 @@
 
 .number {
     margin-bottom: 20px;
+}
+
+
+@media (max-width: 1300px) {
+    .image img {
+        display: block;
+        max-width: 570px;
+        height: 325px;
+    }
+}
+
+@media (max-width: 960px) {
+    .image img {
+        max-width: 500px;
+        height: 255px;
+    }
+}
+
+@media (max-width: 500px) {
+    .image img {
+        max-width: 330px;
+        height: 190px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 410px) {
+    .image img {
+        max-width: 260px;
+        height: 120px;
+        margin: 0;
+    }
 }
