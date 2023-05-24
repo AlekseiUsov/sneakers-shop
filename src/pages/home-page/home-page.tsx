@@ -13,10 +13,13 @@ import { Items } from "../../components/items/items";
 import { ShopBasket } from "../../components/basket/basket";
 import { Loader } from "../../ui-kit/loader/loader";
 
+//Selectors
+import { itemsSelector } from "../../store/selectors/selectors";
+
 
 export const HomePage = () => {
     const dispatch = useAppDispatch();
-    const { isLoading, items, error } = useAppSelector(state => state.items);
+    const { isLoading, items, error } = useAppSelector(itemsSelector);
 
     useEffect(() => {
         dispatch(fetchItems())

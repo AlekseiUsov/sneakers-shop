@@ -4,9 +4,13 @@ import { formatePrice } from '../../../utils/functions';
 //Styles
 import styles from './basketOrderInfo.module.scss'
 
+//Selectors
+import { basketSelector } from '../../../store/selectors/selectors';
+
+
 
 export const BasketOrderInfo = () => {
-    const { tax, shipping, items } = useAppSelector(state => state.basket)
+    const { tax, shipping, items } = useAppSelector(basketSelector)
 
     const subtotal = items.reduce((acc, item) => acc += item.counter * item.price, 0);
     const formatedSubTotal = subtotal >= 1000 ? formatePrice(subtotal) : subtotal;

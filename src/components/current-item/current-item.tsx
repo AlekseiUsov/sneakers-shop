@@ -18,6 +18,7 @@ import { removeCurrentItem } from "../../store/slices/current-item-slice";
 
 export const CurrentItem: FC<TCurrentItem> = (item) => {
     const { largeImage, title, number } = item.item;
+
     const dispath = useAppDispatch();
 
     return (

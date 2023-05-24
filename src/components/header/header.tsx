@@ -15,10 +15,13 @@ import { toggleStatus } from '../../store/slices/cart-slice';
 //Functions
 import { countItems } from '../../utils/functions';
 
+//Selectors
+import { basketSelector } from '../../store/selectors/selectors';
+
 export const Header = () => {
     const dispath = useAppDispatch();
 
-    const { items } = useAppSelector(state => state.basket);
+    const { items } = useAppSelector(basketSelector);
     const counterItems = countItems(items);
 
     return (

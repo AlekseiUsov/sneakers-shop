@@ -14,13 +14,14 @@ import { ShopBasket } from "../../components/basket/basket";
 import { CurrentItem } from "../../components/current-item/current-item";
 import { Loader } from "../../ui-kit/loader/loader";
 
+//Selectors
+import { currentItemSelector } from "../../store/selectors/selectors";
 
 export const ItemPage = () => {
 
     const { id } = useParams();
 
-    const { isLoading, currentItem, error } = useAppSelector(state => state.currentItem);
-    const { status } = useAppSelector(state => state.cartStatus);
+    const { isLoading, currentItem, error } = useAppSelector(currentItemSelector);
 
     const dispatch = useAppDispatch();
 
