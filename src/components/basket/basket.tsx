@@ -8,8 +8,12 @@ import { useAppSelector } from '../../store'
 import { BasketItemslist } from './basketItemsList/basketItemsList'
 import { BasketOrderInfo } from './basketOrderInfo/basketOrderInfo'
 
+//Selectors
+import { statusSelector } from '../../store/selectors/selectors'
+
+
 export const ShopBasket = () => {
-    const { status } = useAppSelector(state => state.cartStatus)
+    const { status } = useAppSelector(statusSelector)
 
     return (
         <div className={`${styles.wrapper}  ${status ? styles.wrapperForTablet : ''}`}>
