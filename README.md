@@ -41,7 +41,7 @@
 3. Клонируйте в нее репозиторий командой ниже:
 
 ```
-git clone https://github.com/HunterM7/sborkaproject.git .
+git clone https://github.com/AlekseiUsov/sneakers-shop.git .
 ```
 
 4. Установите все необходимые пакеты командой ниже:
